@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title><%= yield(:title) %></title>
+    <title>iExperience</title>
+  
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+
+<div id="wrapper">
+ 
+<header>
+<%= link_to 'Ednecia iExperience' , {:controller => 'welcome', :action => 'index'},
+{:class => 'websiteTitle'} %>
+ 
+<%= link_to image_tag("me.jpg",  alt: "A picture of Ednecia"),
+            {:controller => 'welcome', :action => 'index'},
+            {:class => 'websiteLogo'} %>
+ 
+
+ 
+</header>
+ 
+<nav id="horzNav">
+ 
+    <p>
+     <%= link_to 'All', {:controller => 'welcome', :action => 'index'} %>
+      <%= link_to '1 to 25', {:controller => 'pages', :action => 'Q1'} %>
+      <%= link_to '26 to 50', {:controller => 'pages', :action => 'Q2'} %>
+      <%= link_to '51 to 75', {:controller => 'pages', :action => 'Q3'} %>
+      <%= link_to '76 to 100', {:controller => 'pages', :action => 'Q4'} %>
+      
+    </p>
+ 
+</nav>
+ 
+<main id="content">
+ 
+<%= yield %>
+ 
+</main>
+</div> <!-- END OF WRAPPER -->
+  </body>
+</html>
