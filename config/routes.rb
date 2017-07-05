@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'my_pages/home'
+
+  get 'my_pages/projects'
+
+  get 'my_pages/family'
+
+  get 'my_pages/story'
+
+  get 'my_pages/poetry'
+
+  get 'my_pages/contact'
+
   get 'pages/Q1'
 
   get 'pages/Q2'

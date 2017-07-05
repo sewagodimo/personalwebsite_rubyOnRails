@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Made by Ednecia Matlapeng for Iexperience, 2017/06/27.
+mtledn001@myuct.ac.za
 
-Things you may want to cover:
+instructions
 
-* Ruby version
+download the zipped folder that i have sent,
+unzip it
+go to the iexp directory
+open up the terminal here or "git bash here" on windows
+copy the following text into the terminal:  rails server -p 3000
+(if it gives you problems just change the 3000, another program may be using the port)
 
-* System dependencies
+then go to your browser of choice (I like chrome)
+type: http://localhost:3000/
+or : http://localhost:3000/welcome/index
+you will see the webbie that I made
+There is an image of me and my name at the top
+followed by a tab that I made in case you dont want to view 100 numbers at once
+but if you do I included the all option
 
-* Configuration
+Kind Regards
+****************************************************************************************************
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TIPS: 
+to generate a controller
+>	rails g controller <Name of controlelr, eg Pages> <name of pages: about contact home>
+link: http://www.newthinktank.com/2015/03/ruby-rails-tutorial-3/

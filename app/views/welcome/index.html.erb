@@ -1,33 +1,44 @@
-<p> Count to 100 for iExperience</p>
+
  <%#<% Ruby Code % > : Executes Ruby code
  <%= Ruby Code % > : Execute Ruby and Output
  <p><%= get_season() ></p>
 <p><%= get_random_number(100) ></p>
-3.  This is a comment %>
-<h1>
-<%100.times do | i|  %>
-	 <%if (i+1)%5==0%> 
-	 	<%if (i+1)%3==0%> 
-	 		<font color="red">
- 			<%="FizzBuzz"%>
- 			</font>
- 		<%else%>
- 		<font color="orange">
- 		<%="Buzz"%>
- 		</font>
- 		<%end%>
-	 <%else%>
-	 <%if (i+1)%3==0%> 
-	 <font color="green">
- 		<%="Fizz"%>
- 		</font>
-	 <%else%>
- 		 <%= (i+1) %>
- 	<%end%>
- 	<%end%>
- 	<%if(i+1)%10==0%>
- 		<br/>
- 	<%end%>
+3.  This is a comment % >
+<%= link_to image_tag("afrotech.jpg",  style: "height: 400px; width: 100%" ,alt: "AFRO TECH"),
+            {:controller => 'welcome', :action => 'index'},
+            {:class => 'parralax'} %>
+<div class="afro-parallax"></div>
+<div class="heading" style="text-align:center;">I WRITE CODE</div>
+<div class="bodyText"> I first learned about coding from a grade 9 technology textbook, I was really fascinated by
+binary numbers and logic gates. I had never used a computer before and I knew about how
+the first numbers that were printed to a screen. And in grade ten I found myself staring at a
+computer with compiler errors and I have never looked back. I love being able to build
+something from scratch that can be used to improve people's lives and make a difference in
+the world. <p>I enjoy poetry, jazz and I try to jog as much as I can. I spend my holidays encouraging high school
+kids in my neighborhood how to code during the school holidays. I also tutor second and
+first year computer science during the school term. My biggest dream is for computer
+science to be a more inclusive field and of course hover boards.</p></div>
 
-<%end%>
-</h1>
+<div class="me-parallax"></div>
+<div class="heading" style="text-align:center;">A DIVINE SPIRIT HAVING A HUMAN JOURNEY</div>
+<div class="bodyText">
+"As I began to love myself I found that anguish and emotional suffering are only warning signs that I was living against my own truth. Today, I know, this is AUTHENTICITY.
+</br>As I began to love myself I understood how much it can offend somebody as I try to force my desires on this person, even though I knew the time was not right and the person was not ready for it, and even though this person was me. Today I call it RESPECT.
+</br>
+As I began to love myself I stopped craving for a different life, and I could see that everything that surrounded me was inviting me to grow. Today I call it MATURITY.
+
+As I began to love myself I understood that at any circumstance, I am in the right place at the right time, and everything happens at the exactly right moment, so I could be calm. Today I call it <font color="orange">SELF-CONFIDENCE.</font>
+</br>
+As I began to love myself I quit steeling my own time, and I stopped designing huge projects for the future. Today, I only do what brings me joy and happiness, things I love to do and that make my heart cheer, and I do them in my own way and in my own rhythm. Today I call it SIMPLICITY.
+</br>
+As I began to love myself I freed myself of anything that is no good for my health – food, people, things, situations, and everything the drew me down and away from myself. At first I called this attitude a healthy egoism.Today I know it is <font color="orange">LOVE OF ONESELF.</font>
+</br>
+As I began to love myself I quit trying to always be right, and ever since I was wrong less of the time. Today I discovered that is MODESTY.
+</br>
+As I began to love myself I refused to go on living in the past and worry about the future. Now, I only live for the moment, where EVERYTHING is happening. Today I live each day, day by day, and I call it FULFILLMENT.
+</br>
+As I began to love myself I recognized that my mind can disturb me and it can make me sick. But As I connected it to my heart, my mind became a valuable ally. Today I call this connection <font color="orange">WISDOM OF THE HEART.</font>
+</br>
+We no longer need to fear arguments, confrontations or any kind of problems with ourselves or others. Even stars collide, and out of their crashing new worlds are born. Today I know <b>THAT IS LIFE !</b>""- Charlie Chaplin
+</div>
+<div class="girl-parallax"></div>

@@ -11,41 +11,50 @@
   </head>
 
   <body>
+
+
   
-    <div id="wrapper">
+    <div id="wrapper", class= "container">
+      <nav id="horzNav", class="topnav">
 
-<div id="wrapper">
- 
-<header>
-<%= link_to 'Ednecia iExperience' , {:controller => 'welcome', :action => 'index'},
-{:class => 'websiteTitle'} %>
- 
-<%= link_to image_tag("me.jpg",  alt: "A picture of Ednecia"),
-            {:controller => 'welcome', :action => 'index'},
-            {:class => 'websiteLogo'} %>
- 
+    <div class = 'websiteTitle'> Ednecia Matlapeng</div>
 
- 
-</header>
- 
-<nav id="horzNav">
- 
     <p>
-     <%= link_to 'All', {:controller => 'welcome', :action => 'index'} %>
-      <%= link_to '1 to 25', {:controller => 'pages', :action => 'Q1'} %>
-      <%= link_to '26 to 50', {:controller => 'pages', :action => 'Q2'} %>
-      <%= link_to '51 to 75', {:controller => 'pages', :action => 'Q3'} %>
-      <%= link_to '76 to 100', {:controller => 'pages', :action => 'Q4'} %>
+     <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="minimizeHorzNav()"> &#9776;</a>
+     <%= link_to 'HOME', {:controller => 'welcome', :action => 'index'} %>
+      <%= link_to 'PROJECTS', {:controller => 'my_pages', :action => 'projects'} %>
+      <%= link_to 'FAMILY', {:controller => 'my_pages', :action => 'family'} %>
+      <%= link_to 'STORY', {:controller => 'my_pages', :action => 'story'} %>
+      <%= link_to 'POETRY', {:controller => 'my_pages', :action => 'poetry'} %>
+      <%= link_to 'CONTACT', {:controller => 'my_pages', :action => 'contact'} %>
+     
+
       
     </p>
  
 </nav>
+<%= yield %>
+<div id="wrapper">
  
 <main id="content">
  
-<%= yield %>
+
  
 </main>
+ <nav id="topMenu", class= "sociallink" >
+ 
+    <p>
+     <a href="javascript:void(0);" style="font-size:50px;" class="icon" onclick="minimizeSocialNav()">&#64;</a>
+    <%= link_to image_tag("social_large/facebook.png" , size: "50x50",  alt: "Facebook"), {:controller => 'welcome', :action => 'index'}%>
+     <%= link_to image_tag("social_large/gplus.png", size: "50x50",  alt: "G_Plus"),{:controller => 'welcome', :action => 'index'}%>
+       <%= link_to image_tag("social_large/instagram.png", size: "50x50",  alt: "Instagram"),{:controller => 'welcome', :action => 'index'}%>
+        <%= link_to image_tag("social_large/twitter.png", size: "50x50",  alt: "Twitter"),{:controller => 'welcome', :action => 'index'}%>
+         <%= link_to image_tag("social_large/youtube.png", size: "50x50",  alt: "YouTube"),{:controller => 'welcome', :action => 'index'}%>
+          <%= link_to image_tag("social_large/in.png", size: "50x50",  alt: "LinkedIn"),{:controller => 'welcome', :action => 'index'}%> 
+     </p>
+
+   </nav>
+
 </div> <!-- END OF WRAPPER -->
   </body>
 </html>

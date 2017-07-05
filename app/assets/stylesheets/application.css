@@ -15,65 +15,346 @@
  */
 a:hover {
   color: #007ebd;
-  background-color: blue;
+  
 }
  
 body {
-  background: yellow;
+    background: black;
+  margin: 0px;
+
 }
  
 div#wrapper{
   margin:auto;
   background:white;
-  width:80%;
+   background: linear-gradient(-40deg, orange, silver);
+  width:100%;
   height:100%;
+
 }
  
 header {
   display:block;
-  width:800px;
+
   /* Padding Top, Right, Bottom, Left */
   width:80%;
   padding: 10px 10px 30px 10px;
 }
  
 .websiteLogo{
-  padding-left: 50px;
-  width:100px;
-  height:50px
   text-decoration: none;
 }
+
  
 .websiteTitle {
-  font-size: 50px;
+  font-size: 25px;
+  color:orange;
   text-decoration: none;
   font-weight: bold;
-  display: inline;
-  line-height: 90px;
-  padding-left: 20px;
-}
+    display: inline;
+ text-align: center;
  
-#horzNav {
+}
+.heading {
+   background-color:#fff;
+
+  color: #111 ;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font: 400 15px/1.8 "Lato", sans-serif;
+
+}
+.bodyText {
+  background-color:#F5F5F5;
+  color: #111 ;
+  padding-left: 80px;
+   padding-right: 80px;
+   padding-bottom: 15px;
+  font-size: 15px;
+   letter-spacing: 3px;
+   font: 400 15px/1.8 "Lato", sans-serif;
+
+  
+}
+
+
+main {
+  /* Padding Top, Right, Bottom, Left */
+  padding: 10px 20px 20px 0px;
+}
+ /* ----------------RESPONSIVENESS SOCILA MEDIA  BUTTON  -------------------------------------*/
+
+#topMenu {
+  display: inline-block;
+  /* Padding Top, Right, Bottom, Left */
+   margin: 0;
+   padding: 0;
+   float: top;
+    /* cover the whole thing */
+    font-size: 16px;
+    position: absolute;
+ width: 100%;
+/* The background gradient
+  background: grey; /* For browsers that do not support gradients * /
+  background: linear-gradient(-90deg, grey,black); /* Standard syntax * /
+  background: -webkit-linear-gradient(-90deg, black,grey); /* For Safari 5.1 to 6.0 * /
+  background: -o-linear-gradient(-95deg, grey,black); /* For Opera 11.1 to 12.0 * /
+  background: -moz-linear-gradient(90deg, black,grey); /* For Firefox 3.6 to 15 * /
+   .topnav a:not(:first-child) {display: none;}
+   */
+  
+ }
+#topMenu a {
+  text-decoration: none;
+  padding: 0px 10px 0px 20px;
+  width: 50px;
+  font-weight: bold;
+  float: left;
+ padding-left: 0;
+ padding-top: 1px;
+ transition: width 2s;
+}
+#topMenu a:hover{
+  width:70px;
+   font-weight: bold;
+  
+}
+.sociallink{
+  padding-left: 1px;
+  text-decoration: none;
+}
+.sociallink a {
+  float: left;
+  display: block;
+  
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.sociallink a:hover {
+ 
+  color: black;
+}
+
+.sociallink .icon {
+  
+overflow-x: hidden;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+ .sociallink  a {
+    display: none;
+  }
+  .sociallink a.icon {
+    float: left;
+    transition: 0.3s;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .sociallink.responsive {
+    opacity: 1.70;
+    background : white;
+    top: 0;
+    position: absolute;
+    
+    float: top;
+  }
+   .container{
+    width: 100%;
+    background: white;
+  }
+  .sociallink.responsive .icon {
+    position: relative;
+    float: left;
+    top: 0;
+  }
+  .sociallink.responsive a {
+     opacity: 1.70;
+    float: left;
+    display: block;
+    text-align: left;
+  }
+}
+ /* ----------------RESPONSIVENESS SOCILA MEDIA  BUTTON  -------------------------------------*/
+
+
+ /* ----------------- RESPONSIVENESS TOP MENU BUTTON ---------------------------------                 */
+
+ #horzNav {
   display:block;
   /* Padding Top, Right, Bottom, Left */
-  width:800px;
-  padding: 10px 20px 10px 10px;
-  background: black;
+   margin: auto;
+    width: 100%;/* Same as the one used in the header */
+   
+    font-size: 16px;
+  padding: 10px 20px 10px 15%;
+  
+  /*background: linear-gradient(-45deg, black,grey);  Standard syntax */
 }
  
 #horzNav a {
   text-decoration: none;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 10px 0px 20px;
   font-weight: bold;
   color: white;
 }
- 
 #horzNav a:hover {
-  background-color: black;
-  color: #007ebd;
+  color: orange;
+  
 }
- 
-main {
-  /* Padding Top, Right, Bottom, Left */
-  padding: 10px 20px 20px 20px;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
+
+.topnav a {
+  float: left;
+  display: block;
+   transition: font-size 1s;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  
+   font-size: 30px;
+  color: orange;
+}
+
+.topnav .icon {
+  width: 45px;
+  height: 45px;
+
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .topnav{
+    width: 20%;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: left;
+    width: 45px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    opacity: 0.85;
+   
+    top: 0;
+    position: absolute;
+    float: top;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    left:  0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    opacity: 1.70;
+    float: none;
+    display: block;
+    font-size: 40px;
+    text-align: left;
+  }
+}
+ /*  RESPONSIVENESS BUTTON---CLOSED------------- */
+
+  /* ----------------- PARALLAX SCROLLING EFFECR ---------------------------------  */
+.afro-parallax { 
+    /* The image used */
+    background-image: url("afrotech.jpg");
+    /* Set a specific height */
+    height: 400px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.girl-parallax { 
+    /* The image used */
+    background-image: url("uct.jpg");
+    /* Set a specific height */
+    height: 400px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.me-parallax { 
+    /* The image used */
+    background-image: url("photo.jpg");
+    /* Set a specific height */
+    height: 400px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media only screen and (max-device-width: 800px) {
+  /* Turn off on small screens */
+    .afro-parallax {
+
+        background-attachment: scroll;
+    }
+    .girl-parallax {
+
+        background-attachment: scroll;
+    }
+  }
+/*----------------------------THE CONTACT FROM-----------------------------------------*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.formcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</s
