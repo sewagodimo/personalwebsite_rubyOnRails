@@ -1,2 +1,31 @@
-<h1>MyPages#contact</h1>
-<p>Find me in app/views/my_pages/contact.html.erb</p>
+<div class="girl-parallax" id="beforecontact"></div>
+<div id="contactheading" class="contact">
+<div class="heading" style="text-align:center"  ;"><b>CONTACT ME</b></div>
+<div class="formcontainer">
+  <form action="/action_page.php">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="firstname" placeholder="Your name..">
+
+    <label for="emaile">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email address name..">
+    <br/>
+    <label for="fname">Organization</label>
+
+    <input type="text" id="fname" name="firstname" placeholder="The name of your organization..">
+
+
+    <label for="via">Where did you hear about me</label>
+    <select id="via" name="via">
+      <option value="A-friend">A friend</option>
+      <option value="Social-Media">Social Media</option>
+      <option value="Previous-client">Previous client</option>
+    </select>
+
+    <label for="subject">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+    </form>
+</div>
+</div>

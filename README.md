@@ -27,3 +27,5 @@ TIPS:
 to generate a controller
 >	rails g controller <Name of controlelr, eg Pages> <name of pages: about contact home>
 link: http://www.newthinktank.com/2015/03/ruby-rails-tutorial-3/
+link to something in this page
+>    <%= link_to '#contactheading', :id => 'Header' do %> <div id="headerlogo" onclick="toContact()">CONTACT</div> <% end %>
