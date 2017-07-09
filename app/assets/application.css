@@ -1,0 +1,381 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+a:hover {
+  color: #007ebd;
+  
+}
+ 
+body {
+    background: black;
+  margin: 0px;
+
+}
+ 
+div#wrapper{
+  margin:auto;
+  background:white;
+   background: linear-gradient(-40deg, orange, silver);
+  width:100%;
+  height:100%;
+
+}
+ 
+header {
+  display:block;
+
+  /* Padding Top, Right, Bottom, Left */
+  width:80%;
+  padding: 10px 10px 30px 10px;
+}
+ 
+.websiteLogo{
+  text-decoration: none;
+}
+
+ 
+.websiteTitle {
+  font-size: 25px;
+  color:orange;
+  text-decoration: none;
+  font-weight: bold;
+    display: inline;
+ text-align: center;
+  animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+
+ 
+}
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+         font-size: 5px;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+         font-size: 25px;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+         font-size: 5px;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+         font-size: 25px;
+        -webkit-transform: translateY(0%);
+    }
+}
+.websiteTitleNone {
+
+    display:  none;
+  }
+
+ 
+
+.heading {
+   background-color:#fff;
+
+  color: #111 ;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font: 400 15px/1.8 "Lato", sans-serif;
+
+}
+.bodyText {
+  background-color:#F5F5F5;
+  color: #111 ;
+  padding-left: 80px;
+   padding-right: 80px;
+   padding-bottom: 15px;
+  font-size: 15px;
+   letter-spacing: 3px;
+   font: 400 15px/1.8 "Lato", sans-serif;
+
+  
+}
+
+
+main {
+  /* Padding Top, Right, Bottom, Left */
+  padding: 10px 20px 20px 0px;
+}
+ /* ----------------RESPONSIVENESS SOCILA MEDIA  BUTTON  -------------------------------------*/
+
+#topMenu {
+  display: inline-block;
+  /* Padding Top, Right, Bottom, Left */
+   margin: 0;
+   padding: 0;
+   float: left;
+    /* cover the whole thing */
+    font-size: 16px;
+    position: absolute;
+ width: 100%;
+ height: 55px;
+/* The background gradient
+  background: grey; /* For browsers that do not support gradients * /
+  background: linear-gradient(-90deg, grey,black); /* Standard syntax * /
+  background: -webkit-linear-gradient(-90deg, black,grey); /* For Safari 5.1 to 6.0 * /
+  background: -o-linear-gradient(-95deg, grey,black); /* For Opera 11.1 to 12.0 * /
+  background: -moz-linear-gradient(90deg, black,grey); /* For Firefox 3.6 to 15 * /
+   .topnav a:not(:first-child) {display: none;}
+   */
+  
+ }
+#topMenu a {
+  text-decoration: none;
+  padding: 0px 0px 10px 0px;
+  width: 50px;
+  font-weight: bold;
+  float: left;
+
+ padding-top: 10px;
+ transition: width 1s;
+}
+#topMenu a:hover{
+  width:70px;
+   font-weight: bold;
+  
+}
+.sociallink{
+  text-decoration: none;
+}
+.sociallink a {
+  float: left;
+  display: block;
+  padding: 14px 12px;
+  text-decoration: none;
+  font-size: 1px;
+}
+
+.sociallink a:hover {
+ 
+  color: orange;
+}
+
+.sociallink .icon {
+  
+overflow-x: hidden;
+  display: none;
+}
+
+
+ /* ----------------RESPONSIVENESS SOCILA MEDIA  BUTTON  -------------------------------------*/
+
+
+ /* ----------------- RESPONSIVENESS TOP MENU BUTTON ---------------------------------                 */
+
+ #horzNav {
+  display:block;
+  /* Padding Top, Right, Bottom, Left */
+   margin: auto;
+    width: 100%;/* Same as the one used in the header */
+     position: fixed;
+    font-size: 16px;
+    opacity: 1;
+  padding: 10px 20px 10px 15%;
+  
+  /*background: linear-gradient(-45deg, black,grey);  Standard syntax */
+}
+ 
+#horzNav a {
+  text-decoration: none;
+  padding: 0px 10px 0px 20px;
+  font-weight: bold;
+  color: white;
+}
+#horzNav a:hover {
+  color: orange;
+  
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+   transition: font-size 1s;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  
+   font-size: 30px;
+  color: orange;
+}
+
+.topnav .icon {
+  width: 45px;
+  height: 45px;
+
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .topnav{
+    width: 20%;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: left;
+    width: 45px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    opacity: 0.85;
+   
+    top: 0;
+    position: absolute;
+    float: top;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    left:  0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    opacity: 1.70;
+    float: none;
+    display: block;
+    font-size: 40px;
+    text-align: left;
+  }
+}
+ /*  RESPONSIVENESS BUTTON---CLOSED------------- */
+
+  /* ----------------- PARALLAX SCROLLING EFFECR ---------------------------------  */
+.afro-parallax { 
+    /* The image used */
+    background-image: url("afrotech.jpg");
+    /* Set a specific height */
+    height: 400px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.girl-parallax { 
+    /* The image used */
+    background-image: url("uct.jpg");
+    /* Set a specific height */
+    height: 200px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.me-parallax { 
+    /* The image used */
+    background-image: url("photo.jpg");
+    /* Set a specific height */
+    height: 400px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media only screen and (max-device-width: 800px) {
+  /* Turn off on small screens */
+    .afro-parallax {
+
+        background-attachment: scroll;
+    }
+    .girl-parallax {
+
+        background-attachment: scroll;
+    }
+  }
+/*----------------------------THE CONTACT FROM-----------------------------------------*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.formcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 25px;
+  letter-spacing: 3px;
+  padding-right: 30%;
+  padding-left: 30%;
+  font: 400 15px/1.8 "Lato", sans-serif;
+   background: linear-gradient(-90deg, grey,snow);
+}
+/*----------------------------THE BLOG SIMPLE FROM-----------------------------------------*/
+.blogcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 20px;
+  letter-spacing: 3px;
+  padding-right: 30%;
+  padding-left: 20%;
+  font: 400 15px/1.8 "Lucida Console", monospace;
+   background: linear-gradient(-90deg, peachpuff,grey);
+}

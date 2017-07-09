@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'my_pages/poetry'
 
   get 'my_pages/contact'
-
+  get 'posts/index'
   get 'welcome/index'
   root 'welcome#index'
  # match ':controller(/:action(/:id))', :via => :get
