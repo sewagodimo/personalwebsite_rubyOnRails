@@ -2,7 +2,7 @@
 <div class="girl-parallax" id="beforecontact"></div>
   <div id="wrapper">
   <nav id="blogHorizNav", class="topnav">
-  <div id="heading"  class="heading" style="text-align:center"' onscroll="onScroll()"> My Blogs</div>
+  <div id="heading"  class="heading" style="text-align:center" onscroll="onScroll()"><b> My Blogs</b></div>
   </nav>
   </div>
 
@@ -20,7 +20,7 @@
       </div>
 
       <div class="text-center">
-        <%= link_to "READ MORE", post_path(post) %>
+        <b><%= link_to "READ MORE", post_path(post) %></b>
         <%= link_to "Edit", edit_post_path(post), class: "btn btn-default" %>
         <%= link_to "Delete", post_path(post), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
       </div>
