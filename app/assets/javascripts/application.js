@@ -11,9 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require ckeditor/init
 
 function minimizeHorzNav() {
     var x = document.getElementById("horzNav");
