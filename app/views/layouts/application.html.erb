@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <title><%= yield(:title) %></title>
-    <title>iExperience</title>
+    <title>iblog</title>
   
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -13,8 +12,8 @@
   <body>
 
 
-  
-    <div id="wrapper", class= "container">
+  <% if !current_page?(url_for(:controller => 'posts')) %><!-- If not in blog view  -->
+    <div id="wrapper">
       <nav id="horzNav", class="topnav">
 
     <div id="heading" class = 'websiteTitle' onscroll="onScroll()"> Ednecia Matlapeng</div>
@@ -32,8 +31,9 @@
     </p>
  
 </nav>
+<% end %>
 <%= yield %>
-
+  <% if !current_page?(url_for(:controller => 'posts')) %>
 <div id="wrapper">
 
  <nav id="topMenu", class= "sociallink" >
@@ -49,6 +49,7 @@
 
    </nav>
 
-</div> <!-- END OF WRAPPER -->
+  </div> <!-- END OF WRAPPER -->
+<% end %><!-- End of If  -->
   </body>
 </html>

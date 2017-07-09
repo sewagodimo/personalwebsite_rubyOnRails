@@ -1,2 +1,41 @@
-<div class="girl-parallax" id="beforecontact"></div>
+  <body>
 
+
+  
+    <div id="wrapper", class= "container">
+      <nav id="horzNav", class="topnav">
+
+    <div id="heading" class = 'websiteTitle' onscroll="onScroll()"> Ednecia Matlapeng</div>
+
+    <p>
+     <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="minimizeHorzNav()"> &#9776;</a>
+     <%= link_to 'HOME', {:controller => 'welcome', :action => 'index'} %>
+      <%= link_to 'BLOG', {:controller => 'posts', :action => 'index'} %>
+      <%= link_to 'FAMILY', {:controller => 'my_pages', :action => 'family'} %>
+      <%= link_to 'STORY', {:controller => 'my_pages', :action => 'story'} %>
+      <%= link_to 'POETRY', {:controller => 'my_pages', :action => 'poetry'} %>
+    <%= link_to 'CONTACT', {:controller => 'my_pages', :action => 'contact'} %>
+
+      
+    </p>
+ 
+</nav>
+<%= yield %>
+
+<div id="wrapper">
+
+ <nav id="topMenu", class= "sociallink" >
+ 
+    <p>
+    <%= link_to image_tag("social_large/facebook.png" , size: "50x50",  alt: "Facebook"), {:controller => 'welcome', :action => 'index'}%>
+     <%= link_to image_tag("social_large/gplus.png", size: "50x50",  alt: "G_Plus"),{:controller => 'welcome', :action => 'index'}%>
+       <%= link_to image_tag("social_large/instagram.png", size: "50x50",  alt: "Instagram"),{:controller => 'welcome', :action => 'index'}%>
+        <%= link_to image_tag("social_large/twitter.png", size: "50x50",  alt: "Twitter"),{:controller => 'welcome', :action => 'index'}%>
+         <%= link_to image_tag("social_large/youtube.png", size: "50x50",  alt: "YouTube"),{:controller => 'welcome', :action => 'index'}%>
+          <%= link_to image_tag("social_large/in.png", size: "50x50",  alt: "LinkedIn"),{:controller => 'welcome', :action => 'index'}%> 
+     </p>
+
+   </nav>
+
+</div> <!-- END OF WRAPPER -->
+  </body>
