@@ -1,13 +1,5 @@
 <div class="girl-parallax" id="beforecontact"></div>
 
-   <% if !current_page?(url_for(:controller => 'posts'))  %><!-- If not in blog view  -->
-  <div id="wrapper">
-  <nav id="horzNav", class="topnav">
-  <div id="heading" class = 'websiteTitle' onscroll="onScroll()"> My Blogs</div>
-  </nav>
-  </div>
- <%end%>
-
 <div class="col-sm-11 col-xs-12 blog-content">
   <h2 class="text-center"> <%= posts/@post.title %></h2>
   <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>

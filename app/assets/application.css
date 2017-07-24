@@ -39,7 +39,7 @@ div#wrapper{
 header {
   display:block;
 
-  /* Padding Top, Right, Bottom, Left */
+  /* Padding Top, Right, Bottom, Left  Classes start with a .*/
   width:80%;
   padding: 10px 10px 30px 10px;
 }

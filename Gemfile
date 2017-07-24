@@ -34,9 +34,16 @@ gem 'jbuilder', '~> 2.5'
 #Installing Simple Form and Bootstrap-Sass
 gem 'simple_form', '~> 3.2'
 gem 'bootstrap-sass', '~> 3.3'
-
+#the editor stuff
+gem 'mini_magick', '~> 4.8.0'
 gem 'ckeditor', '~> 4.1'
+#the slider stuff,does not work
+gem 'nivo-rails','~> 1.0.1'
+#the Paperclip, for images
+gem 'paperclip', '~> 5.1'
 
+# If you are running Rails 5.1+, jQuery might not be a dependency
+# of your project but it's still needed for Nivo Slider to run.
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -7,6 +7,7 @@ CKEDITOR.editorConfig = function(config) {
   config.filebrowserImageUploadUrl = "/ckeditor/pictures";
   config.filebrowserUploadUrl = "/ckeditor/attachment_files";
 
+
   config.toolbar_Pure = [
     '/', {
       name: 'basicstyles',

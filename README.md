@@ -20,6 +20,8 @@ There is an image of me and my name at the top
 followed by a tab that I made in case you dont want to view 100 numbers at once
 but if you do I included the all option
 
+if there is a file not found error restart the server
+
 Kind Regards
 ****************************************************************************************************
 

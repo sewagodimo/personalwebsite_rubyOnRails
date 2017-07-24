@@ -15,7 +15,7 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+@import "nivo";
 a:hover {
   color: #007ebd;
   
@@ -24,6 +24,7 @@ a:hover {
 body {
     background: linear-gradient(-90deg, peachpuff,grey);
   margin: 0px;
+  z-index: -2;
    width:100%;
    height: 100%
 
@@ -32,7 +33,7 @@ body {
 div#wrapper{
   margin:auto;
   background:white;
-   background: linear-gradient(-40deg, orange, silver);
+   background: linear-gradient(-40deg, peachpuff, silver);
   width:100%;
   height:100%;
 
@@ -48,6 +49,11 @@ header {
 
 .container{
   height: 100%;
+}
+.blogposts{
+  background: white;
+  color: black;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
  
@@ -110,6 +116,7 @@ header {
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+  width:100%;
   font: 400 15px/1.8 "Lato", sans-serif;
 
 }
@@ -139,6 +146,7 @@ main {
    margin: 0;
    padding: 0;
    float: left;
+   z-index:99;
    font: 400 15px/1.8 "Lato", sans-serif;
     /* cover the whole thing */
     font-size: 16px;
@@ -314,6 +322,19 @@ overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.poweress-parallax { 
+    /* The image used */
+    background-image: url("poweress.jpg");
+    /* Set a specific height */
+    height: 200px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .me-parallax { 
     /* The image used */
     background-image: url("photo.jpg");
@@ -336,6 +357,10 @@ overflow-x: hidden;
         background-attachment: scroll;
     }
     .girl-parallax {
+
+        background-attachment: scroll;
+    }
+     .poweress-parallax {
 
         background-attachment: scroll;
     }

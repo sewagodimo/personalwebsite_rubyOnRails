@@ -1,7 +1,9 @@
-class Ckeditor::Picture < Ckeditor::Asset
-  mount_uploader :data, CkeditorPictureUploader, mount_on: :data_file_name
+# include CarrierWave::RMagick
 
-  def url_content
-    url(:content)
-  end
+
+class Ckeditor::Asset < ActiveRecord::Base
+  include ActiveRecord
+  include Ckeditor::Orm::ActiveRecord::AssetBase
+  
+  include Ckeditor::Backend::CarrierWave
 end
